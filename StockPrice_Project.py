@@ -1,0 +1,15 @@
+#This is a project that predicts the future price of S&P500
+
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas_datareader as web
+import datetime as dt
+
+from sklearn.preprocessing import MinMaxScaler
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout, LSTM
+
+#Load data
+company = 'FB'
